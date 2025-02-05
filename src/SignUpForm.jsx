@@ -13,14 +13,20 @@ function SignUpForm() {
 
     const onSubmit = async (e) => {
         e.preventDefault();
+
+        if (password.length < 6) {
+            toast.error("Password must be at least 6 characters long!");
+            return;
+        }
+
         try {
             const userCredential = await createUserWithEmailAndPassword(auth, email, password);
             const user = userCredential.user;
 
-            toast("Account created successfully!");
+            toast.success("Account created successfully!");
             navigate('/');
         } catch (err) {
-            toast("Error creating account");
+            toast.error("Error creating account. Please try again.");
         }
     };
 

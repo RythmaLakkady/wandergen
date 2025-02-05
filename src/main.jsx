@@ -8,7 +8,7 @@ import SignUpForm from './SignUpForm';
 import LoginPage from './LoginPage';
 import Profile from './Profile';
 import Hero from './components/ui/custom/Dashboard';  // Assuming Hero is a component
-import ViewTrip from './view-trip/[tripId]';
+import ViewTrip from './view-trip/tripId';
 
 const router = createBrowserRouter([
   {

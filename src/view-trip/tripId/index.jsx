@@ -5,7 +5,9 @@ import { useParams } from 'react-router-dom'
 import { toast } from 'sonner';
 import InfoSection from '../components/InfoSection';
 import Hotels from '../components/Hotels';
-import Itinerary from '../components/itinerary';
+import Itinerary from '../components/Itinerary';
+
+
 
 
 function ViewTrip() {
